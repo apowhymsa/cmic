@@ -1,0 +1,12 @@
+.header-nav-element {
+  position: relative;
+}
+
+.header-nav-element:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #319795;
+}

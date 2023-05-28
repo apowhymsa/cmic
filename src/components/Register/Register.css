@@ -1,0 +1,42 @@
+.form {
+  animation: show 0.5s ease-in-out;
+}
+.step-1,
+.step-2,
+.step-3 {
+  position: relative;
+}
+.step-1:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 2px;
+  width: 96px;
+}
+
+.step-2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 2px;
+  width: 96px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .form {
+    padding: 0px 15px;
+    width: 100%;
+  }
+}

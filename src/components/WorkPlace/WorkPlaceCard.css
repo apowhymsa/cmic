@@ -1,0 +1,13 @@
+/* .workplace-card {
+  border-bottom: 0.5px solid gray;
+} */
+
+.workplace-card {
+  position: relative;
+}
+
+.workplace-card__edit-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

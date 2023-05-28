@@ -1,0 +1,6 @@
+.home-container {
+  display: grid;
+  grid-template-rows: 64px 1fr 150px;
+  min-height: 100vh;
+  max-height: 100vh;
+}

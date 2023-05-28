@@ -1,0 +1,47 @@
+.workplace-container {
+  display: flex;
+  align-items: stretch;
+  height: 515px;
+}
+
+.workplace-messages-container {
+  width: calc(100vw - 200px);
+  max-height: calc(100vh - 150px - 64px);
+}
+
+.chats-container {
+  width: 200px;
+  max-height: calc(100vh - 150px - 64px - 40px);
+}
+
+.chat {
+  position: relative;
+  text-align: center;
+}
+
+.chat-active {
+  background-color: #f1f1f1;
+}
+
+.chat-active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #0d9488;
+}
+
+.workplace-messages,
+.chats-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.add-chat-btn-container svg {
+  transition: all 0.5s ease-in-out;
+}
+.add-chat-btn-container:hover svg {
+  transform: scale(1.1) rotate(180deg);
+}
